@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caleb Cohoon — Software Engineer</title>
+  <meta name="description" content="Caleb Cohoon is a software engineer with 20+ years of experience shipping software for the web, mobile, embedded hardware, retro consoles, and even silicon.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Caleb Cohoon — Software Engineer">
+  <meta property="og:description" content="20+ years of shipping software — from Palm Pilots to a Nintendo 64 game engine to a chip taped out on real silicon.">
+  <meta property="og:url" content="https://calebcohoon.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://calebcohoon.com/assets/img/ultraed-editor.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Caleb Cohoon",
+    "jobTitle": "Software Engineer",
+    "url": "https://calebcohoon.com",
+    "email": "mailto:caleb@imap.cc",
+    "sameAs": [
+      "https://github.com/deadcast2",
+      "https://www.youtube.com/@CalebCohoon"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-brand" href="#top">caleb<span class="accent">@</span>cohoon<span class="cursor" aria-hidden="true">_</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#work">Client Work</a></li>
+        <li><a href="#archive">Archive</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">// software engineer · 20+ years</p>
+          <h1>Hi, I'm <span class="accent">Caleb Cohoon</span>.<br>I build things that ship.</h1>
+          <p class="lede">
+            From Palm Pilot web apps to a Nintendo&nbsp;64 game engine, from e&#8209;commerce
+            platforms to a high&#8209;altitude balloon beaming photos over LoRa — and most
+            recently, a chip taped out on real silicon. Two decades in, I still build
+            for the fun of it.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#featured">See my work</a>
+            <a class="btn btn-ghost" href="mailto:caleb@imap.cc">Get in touch</a>
+          </div>
+          <ul class="hero-links">
+            <li><a href="https://github.com/deadcast2" rel="me">GitHub</a></li>
+            <li><a href="https://www.youtube.com/@CalebCohoon">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="hero-terminal" aria-hidden="true">
+          <div class="term-bar"><i></i><i></i><i></i><span>caleb@cohoon: ~</span></div>
+          <pre class="term-body">$ whoami
+caleb — software engineer
+
+$ uptime
+20+ years building, still going
+
+$ ls ~/shipped-on
+web/      ios/      dotnet/   rails/
+arduino/  palm/     n64/      dreamcast/
+nds/      msdos/    rpi/      silicon/
+
+$ <span class="term-caret">█</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ FEATURED ============================ -->
+    <section class="section" id="featured">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">01</span> Featured Projects</h2>
+        <p class="section-intro">Personal work, built nights and weekends — source available on
+          <a href="https://github.com/deadcast2">GitHub</a> where noted.</p>
+
+        <div class="featured-grid">
+
+          <article class="card card-wide reveal">
+            <div class="card-media">
+              <img src="assets/img/ultraed-editor.png" alt="UltraEd level editor showing a 3D scene, scene graph, and property panels" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2017–2022</span><span class="stars">★ 139 on GitHub</span></div>
+              <h3>UltraEd — Nintendo 64 Game Engine &amp; Level Editor</h3>
+              <p>A from-scratch level editor and game engine targeting <em>real Nintendo&nbsp;64
+                hardware</em>. Scene editing, automatic asset tracking, and a C scripting API with
+                actor lifecycle hooks (<code>$Start</code>, <code>$Update</code>, <code>$Input</code>,
+                <code>$Collide</code>). Builds run in the bundled cen64 emulator or on a console via
+                the 64drive flash cart. Featured on the Hacker News front page.</p>
+              <ul class="tags"><li>C</li><li>DirectX</li><li>N64</li><li>Compilers &amp; tooling</li></ul>
+              <p class="card-links">
+                <a href="https://github.com/deadcast2/UltraEd">Source</a>
+                <a href="https://news.ycombinator.com/item?id=15637506">Show HN (90 points)</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="assets/img/fragment-demo.gif" alt="Animated first-person scene from fragment, a 1.4 MB interactive demo" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2022</span></div>
+              <h3>fragment — A World on a Floppy Disk</h3>
+              <p>A demoscene-style experiment: an interactive, first-person 3D scene that fits in
+                under 1.4&nbsp;MB — small enough to ship on an actual floppy diskette (and it did,
+                custom label and all). Win32, with custom model, audio, and image compressors
+                written for the job.</p>
+              <ul class="tags"><li>C</li><li>Win32</li><li>Size coding</li><li>Compression</li></ul>
+              <p class="card-links"><a href="https://github.com/deadcast2/fragment">Source</a></p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2019–2022</span></div>
+              <h3>HABIL — High-Altitude Balloon Imaging via LoRa</h3>
+              <p>A weather balloon rig that photographs the flight and transmits the images to the
+                ground over a LoRa radio link — Raspberry&nbsp;Pi, RF95 radio, and JPEG&nbsp;2000
+                compression to survive the tiny bandwidth. These four photos came down by radio,
+                not on an SD card:</p>
+              <div class="habil-strip" role="img" aria-label="Four low-resolution aerial photographs received from the balloon over LoRa radio">
+                <img src="assets/img/habil-1.jpg" alt="" loading="lazy">
+                <img src="assets/img/habil-2.jpg" alt="" loading="lazy">
+                <img src="assets/img/habil-3.jpg" alt="" loading="lazy">
+                <img src="assets/img/habil-4.jpg" alt="" loading="lazy">
+              </div>
+              <ul class="tags"><li>C</li><li>Raspberry Pi</li><li>LoRa</li><li>Embedded</li></ul>
+              <p class="card-links"><a href="https://github.com/deadcast2/HABIL">Source</a></p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="assets/img/jeanie-1.png" alt="Jeanie reservation system calendar interface" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2019–present</span><span class="badge-live">In production</span></div>
+              <h3>Jeanie — Research Appointment Scheduling</h3>
+              <p>Appointment booking system built for a research lab at Texas&nbsp;Tech University,
+                in production use for two years. Time-slot management, blocked dates, daily limits,
+                automated confirmation and reminder emails, calendar export
+                (Google/Apple/Outlook), and a full admin panel. Open-sourced under MIT.</p>
+              <ul class="tags"><li>ASP.NET MVC</li><li>C#</li><li>SendGrid</li></ul>
+              <p class="card-links"><a href="https://github.com/deadcast2/jeanie">Source</a></p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="assets/img/wanikani-frame.jpg" alt="E-ink display in a picture frame showing Japanese kanji from WaniKani" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2023</span></div>
+              <h3>WaniKani Carousel</h3>
+              <p>A picture frame that teaches Japanese: a Raspberry&nbsp;Pi drives an e&#8209;ink
+                display cycling through the newest kanji, radicals, and vocabulary from the
+                WaniKani API. A .NET web app renders each card; a headless browser screenshots it
+                for the e-paper panel.</p>
+              <ul class="tags"><li>.NET Core</li><li>Raspberry Pi</li><li>E-ink</li><li>Python</li></ul>
+              <p class="card-links"><a href="https://github.com/deadcast2/WaniKaniCarousel">Source</a></p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media card-media-svg">
+              <svg viewBox="0 0 320 180" role="img" aria-label="Stylized pixel smiley face on a VGA-style background" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#10131c"/>
+                <g fill="#1c2233">
+                  <rect x="0" y="0" width="320" height="2"/><rect x="0" y="20" width="320" height="2"/>
+                  <rect x="0" y="40" width="320" height="2"/><rect x="0" y="60" width="320" height="2"/>
+                  <rect x="0" y="80" width="320" height="2"/><rect x="0" y="100" width="320" height="2"/>
+                  <rect x="0" y="120" width="320" height="2"/><rect x="0" y="140" width="320" height="2"/>
+                  <rect x="0" y="160" width="320" height="2"/>
+                </g>
+                <g transform="translate(124,54)">
+                  <rect x="0" y="0" width="72" height="72" rx="14" fill="#ffb454"/>
+                  <rect x="16" y="20" width="10" height="14" fill="#10131c"/>
+                  <rect x="46" y="20" width="10" height="14" fill="#10131c"/>
+                  <path d="M18 48 q18 16 36 0" stroke="#10131c" stroke-width="7" fill="none" stroke-linecap="round"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2026</span><span class="badge-live">Taped out</span></div>
+              <h3>Happy Hop — A Smiley Face in Silicon</h3>
+              <p>An actual ASIC, submitted to the Tiny Tapeout GF26a shuttle: a bouncing smiley
+                face rendered live to VGA from a 1×1 tile of custom logic. It blinks every couple
+                of seconds and its eyes track the direction of motion. Verified with cocotb
+                testbenches and an FPGA build before tapeout.</p>
+              <ul class="tags"><li>Verilog</li><li>ASIC</li><li>Tiny Tapeout</li><li>VGA</li></ul>
+              <p class="card-links">
+                <a href="https://github.com/deadcast2/tt_um_happyhop">Source</a>
+                <a href="https://deadcast2.github.io/tt_um_happyhop/">Silicon layout viewer</a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ============================ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">02</span> More Builds</h2>
+        <p class="section-intro">Twenty years of side projects — software, hardware, and the space in between.</p>
+
+        <div class="mini-grid">
+
+          <article class="mini reveal">
+            <h3>Unreal "Deja-Vu" Deathmatch Map <span class="mini-year">1998</span></h3>
+            <!-- TODO(caleb): your blog post from 2010 says you WON the grand prize ($500) at age 11,
+                 for the original Unreal — your notes said "runner up at 12". Confirm which is right. -->
+            <p>Spent months learning UnrealEd as a kid and entered a national best-deathmatch-level
+              contest for the original <em>Unreal</em> — and took the grand prize at age 11.</p>
+            <ul class="tags"><li>UnrealEd</li><li>Level design</li></ul>
+            <p class="card-links"><a href="https://web.archive.org/web/20140602102044/http://calebcohoon.blogspot.com/">The story, recovered</a></p>
+          </article>
+
+          <article class="mini reveal">
+            <h3>Hacking the Moon <span class="mini-year">2013</span></h3>
+            <p>Gutted an Uncle Milton "Moon In My Room" toy and rebuilt it around a hand-soldered
+              Hackduino with a battery-backed real-time clock, so it displays the actual current
+              lunar phase — automatically, forever.</p>
+            <ul class="tags"><li>Arduino</li><li>DS1307 RTC</li><li>Perfboard</li></ul>
+            <p class="card-links">
+              <a href="https://web.archive.org/web/20160209021919/http://calebcohoon.blogspot.com/">Build log, recovered</a>
+            </p>
+          </article>
+
+          <article class="mini reveal">
+            <h3>Perfect Park <span class="mini-year">2011</span></h3>
+            <p>An Arduino-powered parking sonar, built as a Christmas present after watching my dad
+              inch a brand-new SUV into the garage with a human spotter. Tells you exactly when to
+              stop.</p>
+            <ul class="tags"><li>Arduino</li><li>Ultrasonic sensor</li></ul>
+          </article>
+
+          <article class="mini reveal">
+            <h3>SAD — Speed Awareness Device <span class="mini-year">~2005</span></h3>
+            <!-- TODO(caleb): add a sentence or two about how SAD worked — no public record survives. -->
+            <p>A homebrew device for making drivers aware of their speed, built two decades ago —
+              long before every car had a screen telling you to slow down.</p>
+            <ul class="tags"><li>Hardware</li><li>Embedded</li></ul>
+          </article>
+
+          <article class="mini reveal">
+            <h3>Propulsion Physics <span class="mini-year">2019</span></h3>
+            <p>A Unity tool for propelling 2D/3D rigidbodies along a trajectory to a target —
+              solve-the-launch-vector physics, packaged for easy drop-in use.</p>
+            <ul class="tags"><li>Unity</li><li>C#</li><li>Physics</li></ul>
+            <p class="card-links"><a href="https://github.com/deadcast2/propulsion-physics">Source</a></p>
+          </article>
+
+          <article class="mini reveal">
+            <h3>vsgwx <span class="mini-year">2022</span></h3>
+            <p>A cross-platform C++17 library integrating VulkanSceneGraph rendering into
+              wxWidgets applications, for Windows and Linux.</p>
+            <ul class="tags"><li>C++17</li><li>Vulkan</li><li>wxWidgets</li></ul>
+            <p class="card-links"><a href="https://github.com/deadcast2/vsgwx">Source</a></p>
+          </article>
+
+          <article class="mini reveal">
+            <h3>Bird of the Day <span class="mini-year"></span></h3>
+            <!-- TODO(caleb): describe Bird of the Day — platform, what it did. -->
+            <p>A daily dose of birds: one featured bird, every day.</p>
+            <ul class="tags"><li>App</li></ul>
+          </article>
+
+          <article class="mini reveal">
+            <h3>ThinkPDF &amp; ThinkGFX <span class="mini-year"></span></h3>
+            <!-- TODO(caleb): describe ThinkPDF / ThinkGFX — what they did, platform, era. -->
+            <p>A pair of document and graphics tools from the "Think" family of projects.</p>
+            <ul class="tags"><li>Tools</li></ul>
+          </article>
+
+          <article class="mini reveal">
+            <h3>Remote Work <span class="mini-year"></span></h3>
+            <!-- TODO(caleb): describe the Remote Work project. -->
+            <p>Software for getting real work done from anywhere.</p>
+            <ul class="tags"><li>App</li></ul>
+          </article>
+
+          <article class="mini reveal">
+            <h3>Xmas Quest <span class="mini-year"></span></h3>
+            <!-- TODO(caleb): describe Xmas Quest — game? platform? -->
+            <p>A holiday adventure built for the season.</p>
+            <ul class="tags"><li>Game</li></ul>
+          </article>
+
+          <article class="mini reveal">
+            <h3>Kitty Pizza: The Game <span class="mini-year">2012</span></h3>
+            <p>A browser game where you "face your greatest enemy and take back what is rightfully
+              yours" across a world of great pizza and geometrically simple animals. Recovered
+              from the lost blog.</p>
+            <ul class="tags"><li>JavaScript</li><li>Browser game</li></ul>
+          </article>
+
+          <article class="mini reveal">
+            <h3>Gunpowder — BDD for Unity <span class="mini-year">2012</span></h3>
+            <p>A JavaScript behavior-driven testing framework for Unity, styled after Jasmine —
+              bringing describe/it specs to game code.</p>
+            <ul class="tags"><li>Unity</li><li>Testing</li></ul>
+          </article>
+
+        </div>
+
+        <h3 class="hm-title">Honorable mentions</h3>
+        <ul class="hm-list reveal">
+          <li><strong>The Wishing Well</strong> (2009) — a novelty iPhone app: make a wish anywhere, no pocket change required. Got a video review from The App Podcast.</li>
+          <li><strong>GeoVerse</strong> (2011) — an iOS app for "dropping" Bible verses at real-world locations. <em>Let's verse the earth.</em></li>
+          <li><strong>GTIN</strong> — a mobile product-lookup website built for Palm Pilot browsers, back when "mobile web" meant a Palm Pilot.</li>
+          <li><strong>Stock Orb Ticker</strong> — an ambient orb that glows with the market.</li>
+          <li><strong>Sprinkler on Demand</strong> — text a message, water the lawn. SMS-controlled irrigation.</li>
+          <li><strong>MakerBot Cupcake CNC</strong> (2011) — built one of the last Cupcake kits ever sold, then wrote the official MakerBot wiki guide for making it Bluetooth-enabled.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================== CLIENT WORK =========================== -->
+    <section class="section" id="work">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">03</span> Client &amp; Contract Work</h2>
+        <p class="section-intro">A selection of professional work, from early-web Flash to offline-first PWAs.</p>
+
+        <ol class="timeline">
+          <li class="reveal">
+            <h3>ModCloth — First Mobile Shop</h3>
+            <p>Created ModCloth's first mobile shopping website — bringing the Shop to phones just
+              as the retailer's mobile traffic was exploding (it would soon pass 50% of all
+              visits).</p>
+            <ul class="tags"><li>E-commerce</li><li>Mobile web</li></ul>
+          </li>
+          <li class="reveal">
+            <h3>Design Tech — Master Control Rewrite</h3>
+            <!-- TODO(caleb): fill in the real before/after numbers ("took them from X to Y"). -->
+            <p>Rewrote the company's master control program from the ground up, dramatically
+              improving throughput and reliability of their core operations.</p>
+            <ul class="tags"><li>Systems</li><li>Rewrite</li></ul>
+          </li>
+          <li class="reveal">
+            <h3>Design Tech — Offline-First Construction PWA</h3>
+            <!-- TODO(caleb): fill in the real before/after numbers ("took them from X to Y"). -->
+            <p>Built a progressive web app for construction managers that keeps working with no
+              connectivity on job sites — full offline use with sync when a signal returns.</p>
+            <ul class="tags"><li>PWA</li><li>Offline-first</li></ul>
+          </li>
+          <li class="reveal">
+            <h3>MissionMakr</h3>
+            <p>All-in-one platform for organizing church short-term mission trips: trip promotion,
+              online applications, fundraising and donation tracking, team prep, and
+              from-the-field blogging. Launched on Ruby on Rails; the platform served churches
+              for over a decade.</p>
+            <ul class="tags"><li>Ruby on Rails</li><li>SaaS</li></ul>
+          </li>
+          <li class="reveal">
+            <h3>Log-a-Tour — Cranbrook</h3>
+            <!-- TODO(caleb): add a detail or two — what did Log-a-Tour do, roughly when? -->
+            <p>A tour-logging application built for Cranbrook.</p>
+            <ul class="tags"><li>Web app</li></ul>
+          </li>
+          <li class="reveal">
+            <h3>CL Bryant Website</h3>
+            <p>My first Flash website — full-motion, full-sound, very 2000s, and the client loved
+              it.</p>
+            <ul class="tags"><li>Flash</li><li>Web design</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================ ARCHIVE ============================ -->
+    <section class="section section-alt" id="archive">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">04</span> From the Lost Archives</h2>
+        <p class="section-intro">
+          I kept a blog from 2008 to 2016. The site is long gone, but the Internet Archive's
+          Wayback Machine preserved most of it — here are some favorites, exactly as they were.
+        </p>
+        <ul class="archive-list reveal">
+          <li>
+            <a href="https://web.archive.org/web/20160209021919/http://calebcohoon.blogspot.com/">Hacking the Moon In My Room</a>
+            <span class="archive-date">Jan 2013</span>
+            <p>Rebuilding a kids' moon-phase toy around a homemade Arduino and a real-time clock.</p>
+          </li>
+          <li>
+            <a href="https://web.archive.org/web/20141026142037/http://calebcohoon.blogspot.com/2012/06/test-rubymotion-apps-using-cucumber.html">Test RubyMotion Apps Using Cucumber</a>
+            <span class="archive-date">Jun 2012</span>
+            <p>A testing tutorial that found an audience — Frank + Cucumber for iOS apps written in Ruby.</p>
+          </li>
+          <li>
+            <a href="https://web.archive.org/web/20150924035135/http://calebcohoon.blogspot.com/2011/02/bluetooth-makerbot.html">Bluetooth MakerBot</a>
+            <span class="archive-date">Feb 2011</span>
+            <p>Cutting the cord on a MakerBot Cupcake CNC — written up for the official MakerBot wiki.</p>
+          </li>
+          <li>
+            <a href="https://web.archive.org/web/20140602102044/http://calebcohoon.blogspot.com/">Unreal</a>
+            <span class="archive-date">Aug 2010</span>
+            <p>The story of "Deja-Vu" — the deathmatch map that won a national contest when I was 11.</p>
+          </li>
+          <li>
+            <a href="https://web.archive.org/web/20130506180230/http://calebcohoon.blogspot.com/">The blog, as it looked in 2013</a>
+            <span class="archive-date">2008–2016</span>
+            <p>The whole thing, frozen in amber courtesy of the Wayback Machine.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <h2 class="section-title"><span class="section-num">05</span> Say Hello</h2>
+        <p class="contact-lede">
+          I'm currently open to new opportunities. If you'd like to talk about software,
+          hardware, retro consoles, or work — my inbox is open.
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="mailto:caleb@imap.cc">caleb@imap.cc</a></p>
+        <ul class="contact-links">
+          <li><a href="https://github.com/deadcast2">GitHub <span class="dim">/deadcast2</span></a></li>
+          <li><a href="https://www.youtube.com/@CalebCohoon">YouTube <span class="dim">3D Caleb — graphics programming on a real 486</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Caleb Cohoon · Hand-built with plain HTML, CSS, and JS — no frameworks, no build step.</p>
+      <p class="footer-quip">Best viewed on any device made after 1994.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
