@@ -404,6 +404,49 @@ img { max-width: 100%; display: block; }
   image-rendering: pixelated;
 }
 
+/* SAD photo panel: rotated hero on top, two build shots below */
+.card-wide .sad-photos {
+  flex: 1 1 42%;
+  min-width: 0;
+  border-left: 1px solid var(--border);
+  background: #090b10;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sad-photo-main { margin: 0; text-align: center; }
+.sad-photo-main img {
+  max-height: 340px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+.sad-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin: 0;
+}
+.sad-photo-main figcaption,
+.sad-strip figcaption {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  margin-top: 5px;
+  line-height: 1.3;
+}
+.sad-strip figure { margin: 0; }
+.sad-strip img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
 /* ============================== mini grid ============================== */
 
 .mini-grid {
@@ -586,6 +629,7 @@ img { max-width: 100%; display: block; }
   .featured-grid { grid-template-columns: 1fr; }
   .card-wide { flex-direction: column; }
   .card-wide .card-media { border-right: 0; border-bottom: 1px solid var(--border); aspect-ratio: 16 / 10; }
+  .card-wide .sad-photos { border-left: 0; border-top: 1px solid var(--border); }
   .mini-grid { grid-template-columns: 1fr 1fr; }
 }
 

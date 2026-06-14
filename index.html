@@ -120,6 +120,42 @@ $ <span class="term-caret">█</span></pre>
             </div>
           </article>
 
+          <article class="card card-wide reveal">
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2006</span><span class="stars">★ Original paper included</span></div>
+              <h3>S.A.D — A GPS Speed Awareness Device</h3>
+              <p>A homebrew device that tells you the speed limit of the road you're on — built years before
+                cars did this themselves. A floor-mounted base unit reads its position from a GPS module,
+                parses the raw <code>NMEA&nbsp;0183</code> stream, and matches your coordinates against
+                street &ldquo;boundary boxes&rdquo; stored in an I&sup2;C EEPROM, then beams the speed limit and
+                street name to a dashboard LCD over a single phone cable.</p>
+              <p>The base runs <em>four</em> different Atmel 8051 microcontrollers — one parsing GPS, one
+                matching the map, one handling EEPROM map updates over a DB9 serial link from a custom PC
+                tool, and one driving the remote display. Each chip model (AT89C2051/51/52/55) was picked to
+                fit its code module. All of it hand-wired on breadboards and stuffed into a project box.</p>
+              <ul class="tags"><li>C</li><li>8051 / assembly</li><li>GPS / NMEA</li><li>I²C EEPROM</li><li>Embedded</li></ul>
+              <p class="card-links">
+                <a href="assets/sad-semester-project.pdf">Read the original paper (PDF)</a>
+              </p>
+            </div>
+            <div class="sad-photos">
+              <figure class="sad-photo-main">
+                <img src="assets/img/sad-device.jpg" alt="The finished S.A.D — a black project-box base unit with status LEDs and three red buttons, above a separate dashboard LCD module" loading="lazy">
+                <figcaption>// the finished S.A.D — base unit and dashboard LCD</figcaption>
+              </figure>
+              <div class="sad-strip">
+                <figure>
+                  <img src="assets/img/sad-internals.jpg" alt="Inside the base unit — a dense rat's nest of colored jumper wires across breadboards, with the silver GPS module at lower right" loading="lazy">
+                  <figcaption>// base unit internals — GPS module at lower right</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/img/sad-lcd.jpg" alt="The dashboard LCD module: a character LCD soldered to a small board, wired across a breadboard, base unit behind it" loading="lazy">
+                  <figcaption>// the remote LCD module, fed serially over RJ-11</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
           <article class="card reveal">
             <div class="card-media">
               <img src="assets/img/fragment-demo.gif" alt="Animated first-person scene from fragment, a 1.4 MB interactive demo" loading="lazy">
@@ -260,14 +296,6 @@ $ <span class="term-caret">█</span></pre>
               inch a brand-new SUV into the garage with a human spotter. Tells you exactly when to
               stop.</p>
             <ul class="tags"><li>Arduino</li><li>Ultrasonic sensor</li></ul>
-          </article>
-
-          <article class="mini reveal">
-            <h3>SAD — Speed Awareness Device <span class="mini-year">~2005</span></h3>
-            <!-- TODO(caleb): add a sentence or two about how SAD worked — no public record survives. -->
-            <p>A homebrew device for making drivers aware of their speed, built two decades ago —
-              long before every car had a screen telling you to slow down.</p>
-            <ul class="tags"><li>Hardware</li><li>Embedded</li></ul>
           </article>
 
           <article class="mini reveal">
