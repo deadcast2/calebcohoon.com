@@ -376,6 +376,9 @@ img { max-width: 100%; display: block; }
   object-fit: cover;
 }
 .card-media-svg svg { display: block; }
+/* Hack-computer screenshots: keep the whole frame, crisp pixels, no crop */
+.card-media-pixel { background: #f4f4f4; }
+.card-media-pixel img { object-fit: contain; image-rendering: pixelated; }
 
 .card-body { padding: 24px 26px 26px; }
 
