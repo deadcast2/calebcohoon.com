@@ -197,6 +197,75 @@ $ <span class="term-caret">█</span></pre>
             </div>
           </article>
 
+          <article class="card card-wide reveal">
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2021</span></div>
+              <h3>Bird of the Day — A Solar Bird-Counting Birdhouse</h3>
+              <p>I have a lot of birds in my Texas front yard, so I put a computer to work counting them.
+                A solar-powered Raspberry&nbsp;Pi in a 3D-printed weatherproof case &mdash; mounted right on the
+                birdhouse, off a <a href="https://www.pishop.us/product/pijuice-hat-a-portable-power-platform-for-every-raspberry-pi/">PiJuice</a>
+                solar panel &mdash; snaps a photo every 20&nbsp;seconds and sends it to <em>Azure Computer
+                Vision</em> for bird detection.</p>
+              <p>The bird count is <code>scp</code>'d to a second Pi&nbsp;Zero&nbsp;W indoors, which drives an
+                I&sup2;C 7-segment display. And every day at 5&nbsp;PM the outdoor unit picks a random
+                detected bird, crops the photo to it, and texts it to me via <em>Twilio</em> &mdash; the
+                &ldquo;Bird of the Day.&rdquo;</p>
+              <ul class="tags"><li>Python</li><li>Raspberry Pi</li><li>Computer vision</li><li>Azure</li><li>I²C</li><li>Twilio</li><li>3D printing</li></ul>
+            </div>
+            <div class="sad-photos">
+              <figure class="sad-photo-main">
+                <img src="assets/img/botd-birdhouse.jpg" alt="A white birdhouse on a post in a front yard, with a small blue weatherproof camera enclosure and a solar panel mounted below it" loading="lazy">
+                <figcaption>// the birdhouse rig — camera enclosure and solar panel on the post</figcaption>
+              </figure>
+              <div class="sad-strip">
+                <figure>
+                  <img src="assets/img/botd-solar.jpg" alt="Close-up of the angled solar panel mounted to the birdhouse post, with the weatherproof Pi enclosure above it" loading="lazy">
+                  <figcaption>// 12W solar panel feeding the outdoor Pi</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/img/botd-counter.jpg" alt="A hand holding the 3D-printed indoor counter unit, its blue 7-segment display reading the current bird count" loading="lazy">
+                  <figcaption>// the indoor Pi Zero counter and its 7-segment display</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-wide reveal">
+            <div class="card-media">
+              <img src="assets/img/dragons-lair-cabinet.jpg" alt="A restored Dragon's Lair arcade cabinet with its iconic green dragon side art, lit marquee, and control panel" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><span class="years">2021</span></div>
+              <h3>Dragon's Lair Restoration</h3>
+              <p>I've loved <em>Dragon's Lair</em> since I first saw the 1983 laserdisc game running in a
+                video-game store as a kid. Years later I tracked down a real 1985 Cinematronics cabinet
+                &mdash; and after a move to Texas, fully restored it.</p>
+              <p>The dead laserdisc player and dying Daphne PC came out; in went a
+                <a href="http://laserdisc-replacement.com/">Dexter</a> board, an
+                <a href="http://wood1st.com/LaserCon/Arthur/">Arthur</a> board, a 19&Prime; LCD, a fresh
+                wiring harness, and a new Wico joystick and buttons. After some firmware updates and a lot
+                of rewiring &mdash; grounds, audio, and the coin door &mdash; the attract sequence burst back
+                to life. Good for many more years.</p>
+              <ul class="tags"><li>Arcade hardware</li><li>Restoration</li><li>Laserdisc</li><li>Retro</li></ul>
+            </div>
+            <div class="sad-photos">
+              <figure class="sad-photo-main">
+                <img src="assets/img/dragons-lair-boards.jpg" alt="New replacement boards, a Raspberry Pi, and a flat LCD panel laid out on a kitchen counter next to the old CRT being removed" loading="lazy">
+                <figcaption>// the new guts — replacement boards, Pi, and LCD replacing the old CRT</figcaption>
+              </figure>
+              <div class="sad-strip">
+                <figure>
+                  <img src="assets/img/dragons-lair-internals.jpg" alt="Inside the open arcade cabinet — a dense bundle of wiring connecting the new control boards" loading="lazy">
+                  <figcaption>// inside the cabinet — rewired from the ground up</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/img/dragons-lair-screen.jpg" alt="The restored cabinet's screen showing Dragon's Lair running — the hero Dirk the Daring against a castle wall" loading="lazy">
+                  <figcaption>// up and running again — Dirk the Daring on screen</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
           <article class="card reveal">
             <div class="card-media">
               <img src="assets/img/jeanie-1.png" alt="Jeanie reservation system calendar interface" loading="lazy">
@@ -321,10 +390,12 @@ $ <span class="term-caret">█</span></pre>
           </article>
 
           <article class="mini reveal">
-            <h3>Bird of the Day <span class="mini-year"></span></h3>
-            <!-- TODO(caleb): describe Bird of the Day — platform, what it did. -->
-            <p>A daily dose of birds: one featured bird, every day.</p>
-            <ul class="tags"><li>App</li></ul>
+            <h3>XAudio2 on Mingw-w64 <span class="mini-year">2018</span></h3>
+            <p>Getting XAudio2 audio playback working in a minimal Win32 program built with Mingw-w64 —
+              back when there was almost nothing on the web about it. A demo project, plus the header
+              tweaks needed to make the Windows&nbsp;8.1 SDK compile under Mingw.</p>
+            <ul class="tags"><li>C</li><li>Win32</li><li>XAudio2</li><li>Mingw-w64</li></ul>
+            <p class="card-links"><a href="https://github.com/deadcast2/xaudio2-mingw-w64">Source</a></p>
           </article>
 
           <article class="mini reveal">
